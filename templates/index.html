@@ -4,11 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hola Mundo</title>
+    <title>Formulario de Contratación</title>
+    <link rel="stylesheet" href="../static/css/style.css">
 </head>
 
 <body>
+    <h2 style="text-align: center;">Formulario de Contratación</h2>
+    <form id="contratoForm">
+        <label for="cedulaInversor">Cédula Inversor</label>
+        <input type="text" id="cedulaInversor" name="cedulaInversor" required>
 
+        <label for="nombreContratista">Nombre del Contratista</label>
+        <input type="text" id="nombreContratista" name="nombreContratista" required>
+
+        <label for="cedulaContratista">Cédula del Contratista</label>
+        <input type="text" id="cedulaContratista" name="cedulaContratista" required>
+
+        <label for="precioEvento">Precio del Evento</label>
+        <input type="number" id="precioEvento" name="precioEvento" required>
+
+        <label for="telefonoCliente">Teléfono del Cliente</label>
+        <input type="text" id="telefonoCliente" name="telefonoCliente" required>
+
+        <label for="saldoAbona">Saldo que Abona</label>
+        <input type="number" id="saldoAbona" name="saldoAbona" required>
+
+        <label for="fechaEvento">Fecha de evento</label>
+        <input type="number" id="fechaEvento" name="fechaEvento" required>
+
+        <label for="lugarEvento">Lugar del Evento</label>
+        <input type="text" id="lugarEvento" name="lugarEvento" required>
+
+        <div class="buttons">
+            <button type="button" class="cancel" onclick="cancelForm()">Cancelar</button>
+            <button type="submit" class="create">Crear</button>
+        </div>
+    </form>
+    <script src="../static/js/main.js"></script>
 </body>
 
 </html>
